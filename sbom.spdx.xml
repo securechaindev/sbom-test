@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpdxDocument xmlns="http://spdx.org/spdx/v2.3"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              spdxVersion="SPDX-2.3"
+              dataLicense="CC0-1.0"
+              SPDXID="SPDXRef-DOCUMENT"
+              name="securechain-multilanguage-sbom"
+              documentNamespace="http://spdx.org/spdxdocs/securechain-sbom-3c7f6e42-52c8-4eeb-b0d4-82c65b93f2ab">
+
+  <creationInfo>
+    <creators>
+      <creator>Tool: SecureChain-multilanguage-sbom-generator-1.0.0</creator>
+    </creators>
+    <created>2025-11-19T12:00:00Z</created>
+  </creationInfo>
+
+  <!-- Packages -->
+  <packages>
+    <package SPDXID="SPDXRef-PyPI-Cryptography">
+      <name>cryptography</name>
+      <versionInfo>41.0.1</versionInfo>
+      <downloadLocation>https://pypi.org/project/cryptography/41.0.1/</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:pypi/cryptography@41.0.1</reference>
+      </externalRefs>
+    </package>
+
+    <package SPDXID="SPDXRef-Maven-Guava">
+      <name>guava</name>
+      <versionInfo>32.1.1-jre</versionInfo>
+      <downloadLocation>https://repo.maven.apache.org/maven2/com/google/guava/guava/32.1.1-jre/</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:maven/com.google.guava/guava@32.1.1-jre</reference>
+      </externalRefs>
+    </package>
+
+    <package SPDXID="SPDXRef-NPM-Lodash">
+      <name>lodash</name>
+      <versionInfo>4.17.21</versionInfo>
+      <downloadLocation>https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:npm/lodash@4.17.21</reference>
+      </externalRefs>
+    </package>
+
+    <package SPDXID="SPDXRef-NuGet-NewtonsoftJson">
+      <name>Newtonsoft.Json</name>
+      <versionInfo>13.0.3</versionInfo>
+      <downloadLocation>https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.3</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:nuget/Newtonsoft.Json@13.0.3</reference>
+      </externalRefs>
+    </package>
+
+    <package SPDXID="SPDXRef-Cargo-Serde">
+      <name>serde</name>
+      <versionInfo>1.0.193</versionInfo>
+      <downloadLocation>https://crates.io/api/v1/crates/serde/1.0.193/download</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:cargo/serde@1.0.193</reference>
+      </externalRefs>
+    </package>
+
+    <package SPDXID="SPDXRef-RubyGems-Rails">
+      <name>rails</name>
+      <versionInfo>7.1.3</versionInfo>
+      <downloadLocation>https://rubygems.org/downloads/rails-7.1.3.gem</downloadLocation>
+      <filesAnalyzed>false</filesAnalyzed>
+      <externalRefs>
+        <reference category="PACKAGE-MANAGER" type="purl">pkg:gem/rails@7.1.3</reference>
+      </externalRefs>
+    </package>
+  </packages>
+
+  <!-- Relationships -->
+  <relationships>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-PyPI-Cryptography</relatedSpdxElement>
+    </relationship>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-Maven-Guava</relatedSpdxElement>
+    </relationship>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-NPM-Lodash</relatedSpdxElement>
+    </relationship>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-NuGet-NewtonsoftJson</relatedSpdxElement>
+    </relationship>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-Cargo-Serde</relatedSpdxElement>
+    </relationship>
+    <relationship>
+      <spdxElementId>SPDXRef-DOCUMENT</spdxElementId>
+      <relationshipType>DESCRIBES</relationshipType>
+      <relatedSpdxElement>SPDXRef-RubyGems-Rails</relatedSpdxElement>
+    </relationship>
+  </relationships>
+</SpdxDocument>
